@@ -1,34 +1,13 @@
 from flask import Flask, render_template, abort, request
 
+from product_queries import get_list_of_products, find_product_by_eng_name, decrease_product_count
 
-class Product:
-    def __init__(self, eng_name: str, rus_name: str, count: int):
-        self.eng_name = eng_name
-        self.rus_name = rus_name
-        self.count = count
-
-
-list_of_products = [
-    Product("thneed", "Всемнужка", 3214545),
-    Product("lorax", "Лоракс", 1),
-    Product("tree", "Дерево", 0),
-    Product("stray_kids", "Стрей Кидс", 8),
-    Product("alina", "Алина", 1),
-]
-
-app = Flask(__name__)
+from app import app
 
 
 @app.route("/")
 def main_page():
-    return render_template("main_page.html", list_of_products=list_of_products)
-
-
-def find_product_by_eng_name(product_name: str) -> Product:
-    for product in list_of_products:
-        if product.eng_name == product_name:
-            return product
-    abort(404)
+    return render_template("main_page.html", list_of_products=get_list_of_products())
 
 
 @app.route("/product/<product_name>")
@@ -44,9 +23,8 @@ def order_product_page(product_name: str):
     product = find_product_by_eng_name(product_name)
     if product.count < 1:  # вынести в отдельный метод
         abort(403)
-    product.count -= 1  # вынести в отдельную функцию
+    decrease_product_count(product)
     return render_template("order_product_page.html", product=product)
 
 
 app.run(debug=True)
-
