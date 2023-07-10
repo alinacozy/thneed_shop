@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Находкинс</title>
+</head>
+<body>
+<h1>Магазин всемнужек</h1>
+<ul>
+    {% for product in list_of_products %}
+        <li><a href="/product/{{product.eng_name}}">{{product.rus_name}}</a> - {{product.count}} шт.</li>
+    {%endfor%}
+</ul>
+</body>
+</html>

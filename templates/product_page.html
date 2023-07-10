@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{product.rus_name}}</title>
+</head>
+<body>
+<a href="/">Назад</a>
+<h1>{{product.rus_name}}</h1>
+{% if product.count>=1 %}
+<form action="/order/{{product.eng_name}}" method="post">
+    <div>
+        <label for="phone_input">Введите номер телефона</label>
+        <input id="phone_input" name="phone"/>
+    </div>
+    <button type="submit">Купить</button>
+</form>
+<p>Осталось {{product.count}} штук!</p>
+{% else %}
+<p>Нет в наличии</p>
+{% endif %}
+</body>
+</html>

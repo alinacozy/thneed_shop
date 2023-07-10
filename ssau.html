@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="description" content="Личный кабинет студентов и сотрудников Самарского университета">
+    <meta name="keywords" content="личный кабинет, Самарский университет, ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="environment" content="production">
+    <meta name="csrf-token" content="IlIFvCrFf8rD2RWUtAVAP5CoOIJSsrZr35uM9rgj">
+    <title>Главная страница | Личный кабинет</title>
+    <link rel="icon" href="/asset/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="/asset/css/chunk-vendors.12a81f25.css" rel="stylesheet">
+    <link href="/asset/css/app.ba9fd742.css" rel="stylesheet">
+    <style type="text/css">
+        .vue-notification-group{display:block;position:fixed;z-index:5000}.vue-notification-wrapper{display:block;overflow:hidden;width:100%;margin:0;padding:0}.notification-title{font-weight:600}.vue-notification-template{background:#fff}.vue-notification,.vue-notification-template{display:block;box-sizing:border-box;text-align:left}.vue-notification{font-size:12px;padding:10px;margin:0 5px 5px;color:#fff;background:#44a4fc;border-left:5px solid #187fe7}.vue-notification.warn{background:#ffb648;border-left-color:#f48a06}.vue-notification.error{background:#e54d42;border-left-color:#b82e24}.vue-notification.success{background:#68cd86;border-left-color:#42a85f}.vn-fade-enter-active,.vn-fade-leave-active,.vn-fade-move{transition:all .5s}.vn-fade-enter,.vn-fade-leave-to{opacity:0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="/asset/css/chunk-7735bf28.322130c0.css">
+    <script charset="utf-8" src="/asset/js/chunk-7735bf28-legacy.d36717ae.js"></script>
+    <style type="text/css" id="vuetify-theme-stylesheet">.v-application a { color: #1976d2; }
+.v-application .primary {
+  background-color: #1976d2 !important;
+  border-color: #1976d2 !important;
+}
+.v-application .primary--text {
+  color: #1976d2 !important;
+  caret-color: #1976d2 !important;
+}
+.v-application .primary.lighten-5 {
+  background-color: #c7fdff !important;
+  border-color: #c7fdff !important;
+}
+.v-application .primary--text.text--lighten-5 {
+  color: #c7fdff !important;
+  caret-color: #c7fdff !important;
+}
+.v-application .primary.lighten-4 {
+  background-color: #a8e0ff !important;
+  border-color: #a8e0ff !important;
+}
+.v-application .primary--text.text--lighten-4 {
+  color: #a8e0ff !important;
+  caret-color: #a8e0ff !important;
+}
+.v-application .primary.lighten-3 {
+  background-color: #8ac5ff !important;
+  border-color: #8ac5ff !important;
+}
+.v-application .primary--text.text--lighten-3 {
+  color: #8ac5ff !important;
+  caret-color: #8ac5ff !important;
+}
+.v-application .primary.lighten-2 {
+  background-color: #6aaaff !important;
+  border-color: #6aaaff !important;
+}
+.v-application .primary--text.text--lighten-2 {
+  color: #6aaaff !important;
+  caret-color: #6aaaff !important;
+}
+.v-application .primary.lighten-1 {
+  background-color: #488fef !important;
+  border-color: #488fef !important;
+}
+.v-application .primary--text.text--lighten-1 {
+  color: #488fef !important;
+  caret-color: #488fef !important;
+}
+.v-application .primary.darken-1 {
+  background-color: #005eb6 !important;
+  border-color: #005eb6 !important;
+}
+.v-application .primary--text.text--darken-1 {
+  color: #005eb6 !important;
+  caret-color: #005eb6 !important;
+}
+.v-application .primary.darken-2 {
+  background-color: #00479b !important;
+  border-color: #00479b !important;
+}
+.v-application .primary--text.text--darken-2 {
+  color: #00479b !important;
+  caret-color: #00479b !important;
+}
+.v-application .primary.darken-3 {
+  background-color: #003180 !important;
+  border-color: #003180 !important;
+}
+.v-application .primary--text.text--darken-3 {
+  color: #003180 !important;
+  caret-color: #003180 !important;
+}
+.v-application .primary.darken-4 {
+  background-color: #001e67 !important;
+  border-color: #001e67 !important;
+}
+.v-application .primary--text.text--darken-4 {
+  color: #001e67 !important;
+  caret-color: #001e67 !important;
+}
+.v-application .secondary {
+  background-color: #424242 !important;
+  border-color: #424242 !important;
+}
+.v-application .secondary--text {
+  color: #424242 !important;
+  caret-color: #424242 !important;
+}
+.v-application .secondary.lighten-5 {
+  background-color: #c1c1c1 !important;
+  border-color: #c1c1c1 !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+  color: #c1c1c1 !important;
+  caret-color: #c1c1c1 !important;
+}
+.v-application .secondary.lighten-4 {
+  background-color: #a6a6a6 !important;
+  border-color: #a6a6a6 !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+  color: #a6a6a6 !important;
+  caret-color: #a6a6a6 !important;
+}
+.v-application .secondary.lighten-3 {
+  background-color: #8b8b8b !important;
+  border-color: #8b8b8b !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+  color: #8b8b8b !important;
+  caret-color: #8b8b8b !important;
+}
+.v-application .secondary.lighten-2 {
+  background-color: #727272 !important;
+  border-color: #727272 !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+  color: #727272 !important;
+  caret-color: #727272 !important;
+}
+.v-application .secondary.lighten-1 {
+  background-color: #595959 !important;
+  border-color: #595959 !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+  color: #595959 !important;
+  caret-color: #595959 !important;
+}
+.v-application .secondary.darken-1 {
+  background-color: #2c2c2c !important;
+  border-color: #2c2c2c !important;
+}
+.v-application .secondary--text.text--darken-1 {
+  color: #2c2c2c !important;
+  caret-color: #2c2c2c !important;
+}
+.v-application .secondary.darken-2 {
+  background-color: #171717 !important;
+  border-color: #171717 !important;
+}
+.v-application .secondary--text.text--darken-2 {
+  color: #171717 !important;
+  caret-color: #171717 !important;
+}
+.v-application .secondary.darken-3 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-3 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .secondary.darken-4 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-4 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .accent {
+  background-color: #82b1ff !important;
+  border-color: #82b1ff !important;
+}
+.v-application .accent--text {
+  color: #82b1ff !important;
+  caret-color: #82b1ff !important;
+}
+.v-application .accent.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .accent--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .accent.lighten-4 {
+  background-color: #f8ffff !important;
+  border-color: #f8ffff !important;
+}
+.v-application .accent--text.text--lighten-4 {
+  color: #f8ffff !important;
+  caret-color: #f8ffff !important;
+}
+.v-application .accent.lighten-3 {
+  background-color: #daffff !important;
+  border-color: #daffff !important;
+}
+.v-application .accent--text.text--lighten-3 {
+  color: #daffff !important;
+  caret-color: #daffff !important;
+}
+.v-application .accent.lighten-2 {
+  background-color: #bce8ff !important;
+  border-color: #bce8ff !important;
+}
+.v-application .accent--text.text--lighten-2 {
+  color: #bce8ff !important;
+  caret-color: #bce8ff !important;
+}
+.v-application .accent.lighten-1 {
+  background-color: #9fccff !important;
+  border-color: #9fccff !important;
+}
+.v-application .accent--text.text--lighten-1 {
+  color: #9fccff !important;
+  caret-color: #9fccff !important;
+}
+.v-application .accent.darken-1 {
+  background-color: #6596e2 !important;
+  border-color: #6596e2 !important;
+}
+.v-application .accent--text.text--darken-1 {
+  color: #6596e2 !important;
+  caret-color: #6596e2 !important;
+}
+.v-application .accent.darken-2 {
+  background-color: #467dc6 !important;
+  border-color: #467dc6 !important;
+}
+.v-application .accent--text.text--darken-2 {
+  color: #467dc6 !important;
+  caret-color: #467dc6 !important;
+}
+.v-application .accent.darken-3 {
+  background-color: #2364aa !important;
+  border-color: #2364aa !important;
+}
+.v-application .accent--text.text--darken-3 {
+  color: #2364aa !important;
+  caret-color: #2364aa !important;
+}
+.v-application .accent.darken-4 {
+  background-color: #004c90 !important;
+  border-color: #004c90 !important;
+}
+.v-application .accent--text.text--darken-4 {
+  color: #004c90 !important;
+  caret-color: #004c90 !important;
+}
+.v-application .error {
+  background-color: #ff5252 !important;
+  border-color: #ff5252 !important;
+}
+.v-application .error--text {
+  color: #ff5252 !important;
+  caret-color: #ff5252 !important;
+}
+.v-application .error.lighten-5 {
+  background-color: #ffe4d5 !important;
+  border-color: #ffe4d5 !important;
+}
+.v-application .error--text.text--lighten-5 {
+  color: #ffe4d5 !important;
+  caret-color: #ffe4d5 !important;
+}
+.v-application .error.lighten-4 {
+  background-color: #ffc6b9 !important;
+  border-color: #ffc6b9 !important;
+}
+.v-application .error--text.text--lighten-4 {
+  color: #ffc6b9 !important;
+  caret-color: #ffc6b9 !important;
+}
+.v-application .error.lighten-3 {
+  background-color: #ffa99e !important;
+  border-color: #ffa99e !important;
+}
+.v-application .error--text.text--lighten-3 {
+  color: #ffa99e !important;
+  caret-color: #ffa99e !important;
+}
+.v-application .error.lighten-2 {
+  background-color: #ff8c84 !important;
+  border-color: #ff8c84 !important;
+}
+.v-application .error--text.text--lighten-2 {
+  color: #ff8c84 !important;
+  caret-color: #ff8c84 !important;
+}
+.v-application .error.lighten-1 {
+  background-color: #ff6f6a !important;
+  border-color: #ff6f6a !important;
+}
+.v-application .error--text.text--lighten-1 {
+  color: #ff6f6a !important;
+  caret-color: #ff6f6a !important;
+}
+.v-application .error.darken-1 {
+  background-color: #df323b !important;
+  border-color: #df323b !important;
+}
+.v-application .error--text.text--darken-1 {
+  color: #df323b !important;
+  caret-color: #df323b !important;
+}
+.v-application .error.darken-2 {
+  background-color: #bf0025 !important;
+  border-color: #bf0025 !important;
+}
+.v-application .error--text.text--darken-2 {
+  color: #bf0025 !important;
+  caret-color: #bf0025 !important;
+}
+.v-application .error.darken-3 {
+  background-color: #9f0010 !important;
+  border-color: #9f0010 !important;
+}
+.v-application .error--text.text--darken-3 {
+  color: #9f0010 !important;
+  caret-color: #9f0010 !important;
+}
+.v-application .error.darken-4 {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+}
+.v-application .error--text.text--darken-4 {
+  color: #800000 !important;
+  caret-color: #800000 !important;
+}
+.v-application .info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.v-application .info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.v-application .info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.v-application .info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.v-application .info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.v-application .info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.v-application .info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.v-application .info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.v-application .info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.v-application .info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.v-application .info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.v-application .info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.v-application .info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.v-application .info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.v-application .info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.v-application .info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.v-application .info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.v-application .info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.v-application .info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.v-application .info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.v-application .success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.v-application .success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.v-application .success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.v-application .success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.v-application .success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.v-application .success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.v-application .success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.v-application .success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.v-application .success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.v-application .success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.v-application .success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.v-application .success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.v-application .success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.v-application .success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.v-application .success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.v-application .success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.v-application .success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.v-application .success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.v-application .success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.v-application .success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.v-application .warning {
+  background-color: #fb8c00 !important;
+  border-color: #fb8c00 !important;
+}
+.v-application .warning--text {
+  color: #fb8c00 !important;
+  caret-color: #fb8c00 !important;
+}
+.v-application .warning.lighten-5 {
+  background-color: #ffff9e !important;
+  border-color: #ffff9e !important;
+}
+.v-application .warning--text.text--lighten-5 {
+  color: #ffff9e !important;
+  caret-color: #ffff9e !important;
+}
+.v-application .warning.lighten-4 {
+  background-color: #fffb82 !important;
+  border-color: #fffb82 !important;
+}
+.v-application .warning--text.text--lighten-4 {
+  color: #fffb82 !important;
+  caret-color: #fffb82 !important;
+}
+.v-application .warning.lighten-3 {
+  background-color: #ffdf67 !important;
+  border-color: #ffdf67 !important;
+}
+.v-application .warning--text.text--lighten-3 {
+  color: #ffdf67 !important;
+  caret-color: #ffdf67 !important;
+}
+.v-application .warning.lighten-2 {
+  background-color: #ffc24b !important;
+  border-color: #ffc24b !important;
+}
+.v-application .warning--text.text--lighten-2 {
+  color: #ffc24b !important;
+  caret-color: #ffc24b !important;
+}
+.v-application .warning.lighten-1 {
+  background-color: #ffa72d !important;
+  border-color: #ffa72d !important;
+}
+.v-application .warning--text.text--lighten-1 {
+  color: #ffa72d !important;
+  caret-color: #ffa72d !important;
+}
+.v-application .warning.darken-1 {
+  background-color: #db7200 !important;
+  border-color: #db7200 !important;
+}
+.v-application .warning--text.text--darken-1 {
+  color: #db7200 !important;
+  caret-color: #db7200 !important;
+}
+.v-application .warning.darken-2 {
+  background-color: #bb5900 !important;
+  border-color: #bb5900 !important;
+}
+.v-application .warning--text.text--darken-2 {
+  color: #bb5900 !important;
+  caret-color: #bb5900 !important;
+}
+.v-application .warning.darken-3 {
+  background-color: #9d4000 !important;
+  border-color: #9d4000 !important;
+}
+.v-application .warning--text.text--darken-3 {
+  color: #9d4000 !important;
+  caret-color: #9d4000 !important;
+}
+.v-application .warning.darken-4 {
+  background-color: #802700 !important;
+  border-color: #802700 !important;
+}
+.v-application .warning--text.text--darken-4 {
+  color: #802700 !important;
+  caret-color: #802700 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <style type="text/css">
+        .vue-slider-dot{position:absolute;-webkit-transition:all 0s;transition:all 0s;z-index:5}.vue-slider-dot:focus{outline:none}.vue-slider-dot-tooltip{position:absolute;visibility:hidden}.vue-slider-dot-hover:hover .vue-slider-dot-tooltip,.vue-slider-dot-tooltip-show{visibility:visible}.vue-slider-dot-tooltip-top{top:-10px;left:50%;-webkit-transform:translate(-50%,-100%);transform:translate(-50%,-100%)}.vue-slider-dot-tooltip-bottom{bottom:-10px;left:50%;-webkit-transform:translate(-50%,100%);transform:translate(-50%,100%)}.vue-slider-dot-tooltip-left{left:-10px;top:50%;-webkit-transform:translate(-100%,-50%);transform:translate(-100%,-50%)}.vue-slider-dot-tooltip-right{right:-10px;top:50%;-webkit-transform:translate(100%,-50%);transform:translate(100%,-50%)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <style type="text/css">
+        .vue-slider-marks{position:relative;width:100%;height:100%}.vue-slider-mark{position:absolute;z-index:1}.vue-slider-ltr .vue-slider-mark,.vue-slider-rtl .vue-slider-mark{width:0;height:100%;top:50%}.vue-slider-ltr .vue-slider-mark-step,.vue-slider-rtl .vue-slider-mark-step{top:0}.vue-slider-ltr .vue-slider-mark-label,.vue-slider-rtl .vue-slider-mark-label{top:100%;margin-top:10px}.vue-slider-ltr .vue-slider-mark{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.vue-slider-ltr .vue-slider-mark-step{left:0}.vue-slider-ltr .vue-slider-mark-label{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.vue-slider-rtl .vue-slider-mark{-webkit-transform:translate(50%,-50%);transform:translate(50%,-50%)}.vue-slider-rtl .vue-slider-mark-step{right:0}.vue-slider-rtl .vue-slider-mark-label{right:50%;-webkit-transform:translateX(50%);transform:translateX(50%)}.vue-slider-btt .vue-slider-mark,.vue-slider-ttb .vue-slider-mark{width:100%;height:0;left:50%}.vue-slider-btt .vue-slider-mark-step,.vue-slider-ttb .vue-slider-mark-step{left:0}.vue-slider-btt .vue-slider-mark-label,.vue-slider-ttb .vue-slider-mark-label{left:100%;margin-left:10px}.vue-slider-btt .vue-slider-mark{-webkit-transform:translate(-50%,50%);transform:translate(-50%,50%)}.vue-slider-btt .vue-slider-mark-step{top:0}.vue-slider-btt .vue-slider-mark-label{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.vue-slider-ttb .vue-slider-mark{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.vue-slider-ttb .vue-slider-mark-step{bottom:0}.vue-slider-ttb .vue-slider-mark-label{bottom:50%;-webkit-transform:translateY(50%);transform:translateY(50%)}.vue-slider-mark-label,.vue-slider-mark-step{position:absolute}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <style type="text/css">
+        .vue-slider{position:relative;-webkit-box-sizing:content-box;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:block;-webkit-tap-highlight-color:rgba(0,0,0,0)}.vue-slider-rail{position:relative;width:100%;height:100%;-webkit-transition-property:width,height,left,right,top,bottom;transition-property:width,height,left,right,top,bottom}.vue-slider-process{position:absolute;z-index:1}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body id="">
+<noscript><strong>Мы сожалеем, но Личный кабинет не работает без разрешенного JavaScript. Пожалуйста, включите
+    JavaScript для продолжения работы с сервисом.</strong></noscript>
+<div data-app="" class="v-application v-application--is-ltr theme--light" id="app">
+    <div class="v-application--wrap">
+        <nav data-v-89ae7222=""
+             class="v-navigation-drawer v-navigation-drawer--fixed v-navigation-drawer--open theme--light"
+             id="navigation-drawer" mobile-break-point="599" data-booted="true"
+             style="height: 100vh; top: 0px; max-height: calc(100% - 0px); transform: translateX(0%); width: 256px;">
+            <div class="v-navigation-drawer__content">
+                <div data-v-89ae7222="" id="sidebar" data-simplebar-auto-hide="" class="sidebar" data-simplebar="init">
+                    <div class="simplebar-wrapper" style="margin: 0px;">
+                        <div class="simplebar-height-auto-observer-wrapper">
+                            <div class="simplebar-height-auto-observer"></div>
+                        </div>
+                        <div class="simplebar-mask">
+                            <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                <div class="simplebar-content-wrapper" tabindex="0" role="region"
+                                     aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;">
+                                    <div class="simplebar-content" style="padding: 0px;">
+                                        <div data-v-89ae7222="" class="v-image v-responsive theme--light"
+                                             style="max-height: 110px;">
+                                            <div class="v-responsive__sizer" style="padding-bottom: 72.973%;"></div>
+                                            <div class="v-image__image v-image__image--cover"
+                                                 style="background-image: url(&quot;https://cabinet.ssau.ru/images/nav_drawer_bg.png&quot;); background-position: center center;"></div>
+                                            <div class="v-responsive__content" style="width: 333px;"><a
+                                                    data-v-89ae7222="" href="/" aria-current="page"
+                                                    class="d-flex align-items-end pa-4 router-link-exact-active router-link-active"
+                                                    id="logo" target="_self">
+                                                <div data-v-89ae7222="" class="pr-1">
+                                                    <div data-v-89ae7222="" class="v-image v-responsive theme--light"
+                                                         id="main-logo">
+                                                        <div class="v-responsive__sizer"
+                                                             style="padding-bottom: 144%;"></div>
+                                                        <div class="v-image__image v-image__image--contain"
+                                                             style="background-image: url(&quot;https://cabinet.ssau.ru/images/logo_white.svg&quot;); background-position: center center;"></div>
+                                                        <div class="v-responsive__content" style="width: 75px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div data-v-89ae7222="" class="ml-2">
+                                                    <div data-v-89ae7222="" class="v-image v-responsive theme--light"
+                                                         id="text-logo" style="height: 27px; width: 98.5px;">
+                                                        <div class="v-responsive__sizer"
+                                                             style="padding-bottom: 27.3973%;"></div>
+                                                        <div class="v-image__image v-image__image--contain"
+                                                             style="background-image: url(&quot;https://cabinet.ssau.ru/images/logo_text_white.svg&quot;); background-position: center center;"></div>
+                                                        <div class="v-responsive__content" style="width: 146px;"></div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        </div>
+                                        <div data-v-89ae7222=""
+                                             class="d-flex flex-column align-center drawer-avatar text-center"><span
+                                                data-v-89ae7222="" class="b-avatar badge-primary rounded-circle"
+                                                style="width: 2.5em; height: 2.5em;"><span class="b-avatar-text"
+                                                                                           style="font-size: calc(1em);"><span>КА</span></span>
+                                            <!----></span>
+                                            <p data-v-89ae7222="" class="title drawer-initials mb-1"> Королева Алина
+                                                Вячеславовна </p>
+                                            <div data-v-89ae7222=""
+                                                 class="v-item-group theme--light v-btn-toggle v-btn-toggle--rounded primary--text"
+                                                 id="sidebar-quick-links"><a data-v-89ae7222=""
+                                                                             href="//portal.office.com"
+                                                                             class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--small"><span
+                                                    class="v-btn__content"><i data-v-89ae7222="" aria-hidden="true"
+                                                                              class="v-icon notranslate mdi mdi-email theme--light"
+                                                                              style="font-size: 12px;"></i></span></a><a
+                                                    data-v-89ae7222="" href="/settings"
+                                                    class="v-btn v-btn--flat v-btn--icon v-btn--round v-btn--router theme--light v-size--small"><span
+                                                    class="v-btn__content"><i data-v-89ae7222="" aria-hidden="true"
+                                                                              class="v-icon notranslate mdi mdi-cogs theme--light"
+                                                                              style="font-size: 12px;"></i></span></a>
+                                                <button data-v-89ae7222="" type="button"
+                                                        class="v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--small">
+                                                    <span class="v-btn__content"><i data-v-89ae7222=""
+                                                                                    aria-hidden="true"
+                                                                                    class="v-icon notranslate mdi mdi-logout theme--light"
+                                                                                    style="font-size: 12px;"></i></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div data-v-89ae7222=""
+                                             class="v-list v-sheet theme--light v-list--dense v-list--nav"><a
+                                                data-v-89ae7222="" href="/" aria-current="page"
+                                                class="v-list-item--active v-list-item v-list-item--link theme--light"
+                                                tabindex="0">
+                                            <div data-v-89ae7222="" class="v-list-item__icon"><i data-v-89ae7222=""
+                                                                                                 aria-hidden="true"
+                                                                                                 class="v-icon notranslate mdi mdi mdi mdi-numeric-1-box-multiple-outline theme--light"></i>
+                                            </div>
+                                            <div data-v-89ae7222="" class="v-list-item__content">
+                                                <div data-v-89ae7222="" class="v-list-item__title">Главная</div>
+                                            </div>
+                                        </a><a data-v-89ae7222="" href="/messenger"
+                                               class="v-list-item v-list-item--link theme--light" tabindex="0">
+                                            <div data-v-89ae7222="" class="v-list-item__icon"><i data-v-89ae7222=""
+                                                                                                 aria-hidden="true"
+                                                                                                 class="v-icon notranslate mdi mdi mdi mdi-email theme--light"></i>
+                                            </div>
+                                            <div data-v-89ae7222="" class="v-list-item__content"><span
+                                                    data-v-89ae7222=""
+                                                    class="v-badge v-badge--bordered v-badge--bottom v-badge--inline theme--light"><div
+                                                    data-v-89ae7222="" class="v-list-item__title">Мессенджер</div><span
+                                                    class="v-badge__wrapper"><span aria-atomic="true" aria-label="знак"
+                                                                                   aria-live="polite" role="status"
+                                                                                   class="v-badge__badge primary"
+                                                                                   style="display: none;"></span></span></span>
+                                            </div>
+                                        </a></div>
+                                        <hr data-v-89ae7222="" role="separator" aria-orientation="horizontal"
+                                            class="ma-0 v-divider theme--light">
+                                        <div data-v-89ae7222=""
+                                             class="v-list v-sheet theme--light v-list--dense v-list--nav">
+                                            <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                                <div tabindex="0" aria-expanded="false" role="button"
+                                                     class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                                    <div class="v-list-item__icon v-list-group__header__prepend-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi mdi mdi-school theme--light"></i>
+                                                    </div>
+                                                    <div data-v-89ae7222="" class="v-list-item__content">
+                                                        <div data-v-89ae7222="" class="v-list-item__title"> Выпускнику
+                                                        </div>
+                                                    </div>
+                                                    <div class="v-list-item__icon v-list-group__header__append-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi-chevron-down theme--light"></i>
+                                                    </div>
+                                                </div><!----></div>
+                                            <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                                <div tabindex="0" aria-expanded="false" role="button"
+                                                     class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                                    <div class="v-list-item__icon v-list-group__header__prepend-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi mdi mdi-information theme--light"></i>
+                                                    </div>
+                                                    <div data-v-89ae7222="" class="v-list-item__content">
+                                                        <div data-v-89ae7222="" class="v-list-item__title"> Информация
+                                                        </div>
+                                                    </div>
+                                                    <div class="v-list-item__icon v-list-group__header__append-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi-chevron-down theme--light"></i>
+                                                    </div>
+                                                </div><!----></div>
+                                            <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                                <div tabindex="0" aria-expanded="false" role="button"
+                                                     class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                                    <div class="v-list-item__icon v-list-group__header__prepend-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi mdi mdi-book-open-page-variant theme--light"></i>
+                                                    </div>
+                                                    <div data-v-89ae7222="" class="v-list-item__content">
+                                                        <div data-v-89ae7222="" class="v-list-item__title"> Учёба</div>
+                                                    </div>
+                                                    <div class="v-list-item__icon v-list-group__header__append-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi-chevron-down theme--light"></i>
+                                                    </div>
+                                                </div><!----></div>
+                                            <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                                <div tabindex="0" aria-expanded="false" role="button"
+                                                     class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                                    <div class="v-list-item__icon v-list-group__header__prepend-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi mdi mdi-account theme--light"></i>
+                                                    </div>
+                                                    <div data-v-89ae7222="" class="v-list-item__content">
+                                                        <div data-v-89ae7222="" class="v-list-item__title"> Профиль
+                                                        </div>
+                                                    </div>
+                                                    <div class="v-list-item__icon v-list-group__header__append-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi-chevron-down theme--light"></i>
+                                                    </div>
+                                                </div><!----></div>
+                                            <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                                <div tabindex="0" aria-expanded="false" role="button"
+                                                     class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                                    <div class="v-list-item__icon v-list-group__header__prepend-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi mdi mdi-monitor theme--light"></i>
+                                                    </div>
+                                                    <div data-v-89ae7222="" class="v-list-item__content">
+                                                        <div data-v-89ae7222="" class="v-list-item__title"> Дистанц.
+                                                            обучение
+                                                        </div>
+                                                    </div>
+                                                    <div class="v-list-item__icon v-list-group__header__append-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi-chevron-down theme--light"></i>
+                                                    </div>
+                                                </div><!----></div>
+                                            <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                                <div tabindex="0" aria-expanded="false" role="button"
+                                                     class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                                    <div class="v-list-item__icon v-list-group__header__prepend-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi mdi mdi-information theme--light"></i>
+                                                    </div>
+                                                    <div data-v-89ae7222="" class="v-list-item__content">
+                                                        <div data-v-89ae7222="" class="v-list-item__title"> Сервисы
+                                                        </div>
+                                                    </div>
+                                                    <div class="v-list-item__icon v-list-group__header__append-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi-chevron-down theme--light"></i>
+                                                    </div>
+                                                </div><!----></div>
+                                            <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                                <div tabindex="0" aria-expanded="false" role="button"
+                                                     class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                                    <div class="v-list-item__icon v-list-group__header__prepend-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi mdi mdi-library-books theme--light"></i>
+                                                    </div>
+                                                    <div data-v-89ae7222="" class="v-list-item__content">
+                                                        <div data-v-89ae7222="" class="v-list-item__title"> Публикации
+                                                        </div>
+                                                    </div>
+                                                    <div class="v-list-item__icon v-list-group__header__append-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi-chevron-down theme--light"></i>
+                                                    </div>
+                                                </div><!----></div>
+                                            <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                                <div tabindex="0" aria-expanded="false" role="button"
+                                                     class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                                    <div class="v-list-item__icon v-list-group__header__prepend-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi mdi mdi-school theme--light"></i>
+                                                    </div>
+                                                    <div data-v-89ae7222="" class="v-list-item__content">
+                                                        <div data-v-89ae7222="" class="v-list-item__title"> Наука</div>
+                                                    </div>
+                                                    <div class="v-list-item__icon v-list-group__header__append-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi-chevron-down theme--light"></i>
+                                                    </div>
+                                                </div><!----></div>
+                                            <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                                <div tabindex="0" aria-expanded="false" role="button"
+                                                     class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                                    <div class="v-list-item__icon v-list-group__header__prepend-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi mdi mdi-summit theme--light"></i>
+                                                    </div>
+                                                    <div data-v-89ae7222="" class="v-list-item__content">
+                                                        <div data-v-89ae7222="" class="v-list-item__title"> ИОТ</div>
+                                                    </div>
+                                                    <div class="v-list-item__icon v-list-group__header__append-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi-chevron-down theme--light"></i>
+                                                    </div>
+                                                </div><!----></div>
+                                            <div data-v-89ae7222="" class="v-list-group v-list-group--no-action">
+                                                <div tabindex="0" aria-expanded="false" role="button"
+                                                     class="v-list-group__header v-list-item v-list-item--link theme--light">
+                                                    <div class="v-list-item__icon v-list-group__header__prepend-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi mdi mdi-account-key theme--light"></i>
+                                                    </div>
+                                                    <div data-v-89ae7222="" class="v-list-item__content">
+                                                        <div data-v-89ae7222="" class="v-list-item__title"> Библиотека
+                                                        </div>
+                                                    </div>
+                                                    <div class="v-list-item__icon v-list-group__header__append-icon"><i
+                                                            aria-hidden="true"
+                                                            class="v-icon notranslate mdi mdi-chevron-down theme--light"></i>
+                                                    </div>
+                                                </div><!----></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="simplebar-placeholder" style="width: auto; height: 751px;"></div>
+                    </div>
+                    <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                        <div class="simplebar-scrollbar simplebar-visible" style="width: 0px; display: none;"></div>
+                    </div>
+                    <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                        <div class="simplebar-scrollbar simplebar-visible"
+                             style="height: 694px; display: block; transform: translate3d(0px, 0px, 0px);"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="v-navigation-drawer__border"></div>
+        </nav>
+        <header class="v-sheet theme--dark v-toolbar v-toolbar--dense v-app-bar v-app-bar--fixed" id="topbar"
+                data-booted="true"
+                style="height: 48px; margin-top: 0px; transform: translateY(0px); left: 256px; right: 0px; background-color: rgb(33, 150, 243); border-color: rgb(33, 150, 243);">
+            <div class="v-toolbar__content" style="height: 48px;">
+                <button type="button"
+                        class="v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--default white--text"><span
+                        class="v-btn__content"><i aria-hidden="true"
+                                                  class="v-icon notranslate mdi mdi-backburger theme--dark"></i></span>
+                </button>
+                <div class="v-toolbar__title">Личный кабинет</div>
+                <div class="spacer"></div>
+                <button type="button"
+                        class="d-none v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--default"><span
+                        class="v-btn__content"><span class="v-badge v-badge--overlap theme--dark"><i aria-hidden="true"
+                                                                                                     class="v-icon notranslate mdi mdi-email theme--dark"></i><span
+                        class="v-badge__wrapper"><span aria-atomic="true" aria-label="знак" aria-live="polite"
+                                                       role="status" class="v-badge__badge orange"
+                                                       style="inset: auto auto calc(100% - 12px) calc(100% - 12px);">6</span></span></span></span>
+                </button>
+                <div class="v-menu mr-2"><!----></div>
+                <button type="button" class="v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--default">
+                    <span class="v-btn__content"><i aria-hidden="true"
+                                                    class="v-icon notranslate mdi mdi-account-circle theme--dark"></i></span>
+                </button>
+            </div>
+        </header>
+        <main class="v-main v-content" data-booted="true" style="padding: 48px 0px 0px 256px;">
+            <div class="v-main__wrap v-content__wrap">
+                <div class="v-overlay v-overlay--absolute theme--dark" style="z-index: 5;">
+                    <div class="v-overlay__scrim white" style="opacity: 0;"></div>
+                </div>
+                <div id="content">
+                    <div class="mainpage">
+                        <div class="mainpage__content">
+                            <div class="mainpage__welcome ">
+                                <div data-v-da1d08b8="" class="home-card greeting">
+                                    <div data-v-da1d08b8="" class="greeting__content"><p data-v-da1d08b8=""
+                                                                                         class="greeting__title"><span
+                                            data-v-da1d08b8="">Здравствуйте,</span><span data-v-da1d08b8=""
+                                                                                         class="greeting__name">Алина!</span>
+                                    </p>
+                                        <div data-v-da1d08b8="" class="greeting__datetime"><span data-v-da1d08b8=""
+                                                                                                 class="greeting__time">13:18</span>
+                                            <div data-v-da1d08b8="" class="greeting__date-dot"></div>
+                                            <span data-v-da1d08b8="" class="greeting__date">воскресенье, 9.07</span>
+                                        </div>
+                                    </div>
+                                    <div data-v-da1d08b8="" class="greeting__img-wr"><img data-v-da1d08b8=""
+                                                                                          src="/images/widget/greeting-mobile.svg"
+                                                                                          class="greeting__img greeting__img--mobile-no-dept"><img
+                                            data-v-da1d08b8="" src="/images/widget/greeting.svg"
+                                            class="greeting__img greeting__img--desc-no-dept"></div>
+                                </div>
+                                <div data-v-f8ad75ce="" class="home-card support-card">
+                                    <div data-v-f8ad75ce="" class="support-card__content">
+                                        <div data-v-f8ad75ce=""><p data-v-f8ad75ce="" class="support-card__subtitle">
+                                            Остались вопросы? </p>
+                                            <h3 data-v-f8ad75ce="" class="support-card__title"> Тех.поддержка </h3>
+                                        </div>
+                                        <div data-v-f8ad75ce="" class="support-card__description"><a data-v-f8ad75ce=""
+                                                                                                     href="tel:+7 (846) 267-49-99"
+                                                                                                     target="_self"
+                                                                                                     class="support-card__contacts">+7
+                                            (846) 267-49-99</a>, <a data-v-f8ad75ce="" href="mailto:help@ssau.ru"
+                                                                    target="_self" class="support-card__contacts">help@ssau.ru</a>
+                                        </div>
+                                    </div>
+                                    <div data-v-f8ad75ce="" class="support-card__img-wr"><img data-v-f8ad75ce=""
+                                                                                              src="/images/widget/support-mobile.svg"
+                                                                                              class="support-card__img support-card__img--mobile-no-dept"><img
+                                            data-v-f8ad75ce="" src="/images/widget/support.svg"
+                                            class="support-card__img support-card__img--desc-no-dept"></div>
+                                </div><!----><!----></div>
+                            <div class="h2-text mainpage__title">Объявления</div>
+                            <div class="ads">
+                                <div class="ads__wrapper">
+                                    <div target="_self" class="main-card ad"><a href="/info/news/160"
+                                                                                class="h3-text ad__title"
+                                                                                target="_self"> В целях улучшения
+                                        раздела "ПГАС" просим пройти короткий опрос </a><a href="/info/news/160"
+                                                                                           class="ad__desc"
+                                                                                           target="_self"> Пожалуйста,
+                                        пройдите короткий опрос. Опрос анонимный </a>
+                                        <div class="ad__icon ad__icon_single-inside-element mt-auto"><!----><i
+                                                class="mdi mdi-information-outline"></i></div>
+                                    </div>
+                                    <div target="_self" class="main-card ad"><a href="/info/news/167"
+                                                                                class="h3-text ad__title"
+                                                                                target="_self"> Увеличен размер
+                                        государственной академической стипендии </a><a href="/info/news/167"
+                                                                                       class="ad__desc" target="_self">
+                                        Новые размеры стипендии установлены с 1.05.2023 </a>
+                                        <div class="ad__icon ad__icon_single-inside-element mt-auto"><!----><i
+                                                class="mdi mdi-information-outline"></i></div>
+                                    </div>
+                                    <div target="_self" class="main-card ad"><a href="/info/news/124"
+                                                                                class="h3-text ad__title"
+                                                                                target="_self"> Вакансия для
+                                        инженеров </a><a href="/info/news/124" class="ad__desc" target="_self"> В
+                                        компанию АО «Уральский завод гражданской авиации» требуется специалист по
+                                        бортовым системам технического обслуживания </a>
+                                        <div class="ad__icon ad__icon_single-inside-element mt-auto"><!----><i
+                                                class="mdi mdi-information-outline"></i></div>
+                                    </div>
+                                    <div target="_self" class="main-card ad"><a href="/info/news/147"
+                                                                                class="h3-text ad__title"
+                                                                                target="_self"> Оплата интернета в
+                                        общежитии </a><a href="/info/news/147" class="ad__desc" target="_self">
+                                        Подробный алгоритм оплаты услуг по предоставлению интернета в общежитиях </a>
+                                        <div class="ad__icon ad__icon_single-inside-element mt-auto"><!----><i
+                                                class="mdi mdi-information-outline"></i></div>
+                                    </div>
+                                    <div target="_self" class="main-card ad"><a href="/info/news/159"
+                                                                                class="h3-text ad__title"
+                                                                                target="_self"> Бесплатное обучение для
+                                        студентов выпускных курсов </a><a href="/info/news/159" class="ad__desc"
+                                                                          target="_self"> Самарский университет проводит
+                                        набор на бесплатное обучение для студентов выпускных курсов: 4 курса
+                                        бакалавриата, 5 курса специалитета, 2 курса магистратуры </a>
+                                        <div class="ad__icon ad__icon_single-inside-element mt-auto"><!----><i
+                                                class="mdi mdi-information-outline"></i></div>
+                                    </div>
+                                    <div target="_self" class="main-card ad"><a href="/info/news/96"
+                                                                                class="h3-text ad__title"
+                                                                                target="_self"> Открыт новый набор на
+                                        программу дополнительного профессионального образования "Управление
+                                        инжиниринговыми системами в автомобилестроении» АО "АВТОВАЗ" </a><a
+                                            href="/info/news/96" class="ad__desc" target="_self"> </a>
+                                        <div class="ad__icon ad__icon_single-inside-element mt-auto"><!----><i
+                                                class="mdi mdi-information-outline"></i></div>
+                                    </div>
+                                    <div target="_self" class="main-card ad"><a href="/info/news/141"
+                                                                                class="h3-text ad__title"
+                                                                                target="_self"> АО "Автоваз" проводит
+                                        набор на программу дополнительного профессионального образования </a><a
+                                            href="/info/news/141" class="ad__desc" target="_self"> Программа
+                                        дополнительного профессионального образования подходит для студентов технических
+                                        и IT направлений выпускных курсов </a>
+                                        <div class="ad__icon ad__icon_single-inside-element mt-auto"><!----><i
+                                                class="mdi mdi-information-outline"></i></div>
+                                    </div>
+                                    <div target="_self" class="main-card ad"><a href="/info/news/142"
+                                                                                class="h3-text ad__title"
+                                                                                target="_self"> Важно! Справка для
+                                        военкомата </a><a href="/info/news/142" class="ad__desc" target="_self"> Справки
+                                        необходимо предоставлять до 1 октября </a>
+                                        <div class="ad__icon ad__icon_single-inside-element mt-auto"><!----><i
+                                                class="mdi mdi-information-outline"></i></div>
+                                    </div>
+                                    <div target="_self" class="main-card ad"><a href="#" target="_self"
+                                                                                class="h3-text ad__title"> Справки о
+                                        размере стипендии студентам </a><a href="#" target="_self" class="ad__desc">
+                                        Справки выдаются лично при наличии документа с 14:00 до 16:00 в 407 кабинете
+                                        административного корпуса.
+                                        Заявки по телефону не принимаются. </a>
+                                        <div class="ad__icon ad__icon_single-inside-element mt-auto"><!----><i
+                                                class="mdi mdi-information-outline"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mainpage__grid">
+                                <div class="main-card matching-work">
+                                    <div class="h3-text main-card__title"> Согласования</div>
+                                    <div class="matching-work__message">
+                                        <div class="matching-work__message-item">
+                                            <div class="main-card__message"><span class="h1-text">0 </span><span
+                                                    class="h2-text">работ </span></div>
+                                            <div class="body-text main-card__description"> на согласовании</div>
+                                        </div>
+                                        <div class="matching-work__message-item">
+                                            <div class="main-card__message"><span class="h1-text">0 </span><span
+                                                    class="h2-text">работ </span></div>
+                                            <div class="body-text main-card__description">для заполнения</div>
+                                        </div>
+                                    </div>
+                                    <img src="/images/icon-matching.png" alt="" class="main-card__background-icon">
+                                    <div class="main-card__bottom">
+                                        <div class="user-type-buttons"><!----><a href="#" target="_self"
+                                                                                 class="user-type-buttons__item user-type-buttons__item_active"><img
+                                                src="/images/icon/icon-student.svg" alt=""
+                                                class="user-type-buttons__item-icon"></a></div>
+                                        <a href="/negotiations" target="_self"
+                                           class="main-card__link"><span>Все работы </span><i
+                                                class="mdi mdi-arrow-right icon-next"></i></a></div>
+                                </div>
+                                <div class="main-card scholarship">
+                                    <div class="h3-text main-card__title"> Стипендия</div>
+                                    <div class="h1-text main-card__message"> 3800 ₽</div>
+                                    <a href="#" target="_self" class="body-text main-card__description" role="button">
+                                        Подробности </a><small class="main-card__description">Сведения о социальной
+                                    стипендии и материальной помощи появляются во второй половине каждого месяца после
+                                    ввода управлением внеучебной работы, uuvr@ssau.ru</small><img
+                                        src="/images/icon-scholarship.png" alt="" class="main-card__background-icon">
+                                    <div class="main-card__bottom"><a href="//ssau.ru/education/student_grants"
+                                                                      rel="noopener" target="_blank"
+                                                                      class="main-card__link"><span>Как получать больше?</span><i
+                                            class="mdi mdi-arrow-right icon-next"></i></a></div><!----></div><!---->
+                                <div class="main-card portfolio">
+                                    <div class="h3-text main-card__title">Электронное портфолио</div>
+                                    <div class="body-text main-card__description"> Группа 6101-010302D</div>
+                                    <img src="/images/icon-portfolio.svg" alt="" class="portfolio__icon">
+                                    <div class="main-card__bottom">
+                                        <div class="dropdown b-dropdown portfolio__download dropup btn-group"
+                                             id="__BVID__130"><!---->
+                                            <button aria-haspopup="true" aria-expanded="false" type="button"
+                                                    class="btn dropdown-toggle btn-link" id="__BVID__130__BV_toggle_">
+                                                Скачать
+                                            </button>
+                                            <ul role="menu" tabindex="-1" class="dropdown-menu"
+                                                aria-labelledby="__BVID__130__BV_toggle_">
+                                                <li role="presentation"><a role="menuitem"
+                                                                           href="/portfolio/resume-generate"
+                                                                           target="_self"
+                                                                           class="dropdown-item">Резюме</a></li>
+                                                <li role="presentation"><a data-no-app="true" role="menuitem"
+                                                                           href="/portfolio/pdf-generate/811681937/755921059"
+                                                                           target="_self" class="dropdown-item">
+                                                    Портфолио 6101-010302D </a></li>
+                                            </ul>
+                                        </div>
+                                        <a href="/portfolio" class="main-card__link portfolio__fill"
+                                           target="_self"><span>Заполнить</span><i
+                                                class="mdi mdi-arrow-right icon-next"></i></a></div>
+                                </div>
+                                <div class="main-card publ-bar">
+                                    <div class="main-card__title h3-text">Публикационная активность</div>
+                                    <div class="main-card__empty-state">
+                                        <div class="main-card__empty-state-image"><img
+                                                src="/images/empty_states/ufo.svg" alt=""></div>
+                                        <div class="body-text main-card__empty-state-message"> Не найдено подтвержденных
+                                            публикаций
+                                        </div>
+                                    </div><!----></div>
+                                <div class="main-card academic-perfomance">
+                                    <div class="h3-text main-card__title"> Электронный журнал</div>
+                                    <div class="academic-perfomance__content">
+                                        <div class="row academic-perfomance__progress">
+                                            <div class="text-center col">
+                                                <div class="radial-progress-container m-auto"
+                                                     style="height: 120px; width: 120px;">
+                                                    <div class="radial-progress-inner" style="width: 114px;">
+                                                        <div class="h1-text"> 67%</div>
+                                                    </div>
+                                                    <svg width="120" height="120" version="1.1"
+                                                         xmlns="http://www.w3.org/2000/svg" class="radial-progress-bar">
+                                                        <defs>
+                                                            <radialGradient id="radial-gradient139"
+                                                                            fx="0.2591231629491424"
+                                                                            fy="0.06184665997806821" cx="0.5" cy="0.5"
+                                                                            r="0.65">
+                                                                <stop offset="30%" stop-color="#FFFFFF"></stop>
+                                                                <stop offset="100%" stop-color="#FFFFFF"></stop>
+                                                            </radialGradient>
+                                                        </defs>
+                                                        <circle r="57" cx="60" cy="60" fill="transparent"
+                                                                stroke="rgba(255, 255, 255, 0.2)"
+                                                                stroke-dasharray="358.1415625092364"
+                                                                stroke-dashoffset="0" stroke-linecap="round"
+                                                                style="height: 120px; width: 120px; stroke-width: 3px;"></circle>
+                                                        <circle transform="rotate(270, 60,60)" r="57" cx="60" cy="60"
+                                                                fill="transparent" stroke="url(#radial-gradient139)"
+                                                                stroke-dasharray="358.1415625092364"
+                                                                stroke-dashoffset="358.1415625092364"
+                                                                stroke-linecap="round"
+                                                                style="height: 120px; width: 120px; stroke-width: 3px; stroke-dashoffset: 118.187; transition: stroke-dashoffset 1000ms linear 0s;"></circle>
+                                                    </svg>
+                                                </div>
+                                                <div>Посещаемость</div>
+                                            </div>
+                                            <div class="text-center col">
+                                                <div class="radial-progress-container m-auto"
+                                                     style="height: 120px; width: 120px;">
+                                                    <div class="radial-progress-inner" style="width: 114px;">
+                                                        <div class="h1-text"> 50%</div>
+                                                    </div>
+                                                    <svg width="120" height="120" version="1.1"
+                                                         xmlns="http://www.w3.org/2000/svg" class="radial-progress-bar">
+                                                        <defs>
+                                                            <radialGradient id="radial-gradient140" fx="0"
+                                                                            fy="0.49999999999999983" cx="0.5" cy="0.5"
+                                                                            r="0.65">
+                                                                <stop offset="30%" stop-color="#FFFFFF"></stop>
+                                                                <stop offset="100%" stop-color="#FFFFFF"></stop>
+                                                            </radialGradient>
+                                                        </defs>
+                                                        <circle r="57" cx="60" cy="60" fill="transparent"
+                                                                stroke="rgba(255, 255, 255, 0.2)"
+                                                                stroke-dasharray="358.1415625092364"
+                                                                stroke-dashoffset="0" stroke-linecap="round"
+                                                                style="height: 120px; width: 120px; stroke-width: 3px;"></circle>
+                                                        <circle transform="rotate(270, 60,60)" r="57" cx="60" cy="60"
+                                                                fill="transparent" stroke="url(#radial-gradient140)"
+                                                                stroke-dasharray="358.1415625092364"
+                                                                stroke-dashoffset="358.1415625092364"
+                                                                stroke-linecap="round"
+                                                                style="height: 120px; width: 120px; stroke-width: 3px; stroke-dashoffset: 179.071; transition: stroke-dashoffset 1000ms linear 0s;"></circle>
+                                                    </svg>
+                                                </div>
+                                                <div>Успеваемость</div>
+                                            </div>
+                                        </div>
+                                        <div class="academic-perfomance__description">
+                                            <div class="academic-perfomance__description-item">
+                                                <div class="h3-text"> 28</div>
+                                                <div class="caption-text"> Посетил</div>
+                                            </div>
+                                            <div class="academic-perfomance__description-hr"></div>
+                                            <div class="academic-perfomance__description-item">
+                                                <div class="h3-text"> 42</div>
+                                                <div class="caption-text"> Занятий</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-card__bottom">
+                                        <div class="user-type-buttons"><!----><a href="#" target="_self"
+                                                                                 class="user-type-buttons__item user-type-buttons__item_active"><img
+                                                src="/images/icon/icon-student.svg" alt=""
+                                                class="user-type-buttons__item-icon"></a></div><!----><a
+                                            href="/study/current-progress/for-student" class="main-card__link"
+                                            target="_self"><span>Подробности </span><i
+                                            class="mdi mdi-arrow-right icon-next"></i></a><!----></div>
+                                </div><!----><!----></div><!----></div>
+                        <div class="d-none">
+                            <div class="daily-timetable-background daily-timetable-background_show"></div>
+                            <div class="timetable timetable_show">
+                                <div class="timetable__head">
+                                    <div class="timetable__top"><h3 class="h3-text timetable__top-title">Расписание</h3>
+                                        <a href="#" target="_self" class="timetable__top-button"><i
+                                                class="mdi mdi-close"></i></a></div>
+                                    <div class="timetable__bottom">
+                                        <div class="timetable__bottom-date"> На сегодня</div>
+                                        <div class="user-type-buttons timetable__bottom-buttons"><!----><a href="#"
+                                                                                                           target="_self"
+                                                                                                           class="user-type-buttons__item user-type-buttons__item_active"><img
+                                                src="/images/icon/icon-student.svg" alt=""
+                                                class="user-type-buttons__item-icon"></a></div>
+                                    </div>
+                                </div>
+                                <div class="timetable__body">
+                                    <div class="timetable__empty-state empty-state">
+                                        <div class="empty-state__image"><img src="/images/empty_states/cosmonaut.svg"
+                                                                             alt=""></div>
+                                        <div class="empty-state__message"> Обращайтесь в учебный отдел, если вашего
+                                            расписания нет в личном кабинете
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!----></div>
+                    </div>
+                </div>
+                <div class="vue-notification-group" style="width: 300px; bottom: 0px; left: calc(50% - 150px);">
+                    <span></span></div>
+                <form id="logoutForm" action="/logout" method="post" style="display: none;"><input type="hidden"
+                                                                                                   name="_token"
+                                                                                                   value=""></form>
+            </div>
+        </main>
+    </div>
+</div>
+<script async="" src="https://mc.yandex.ru/metrika/tag.js"></script>
+<script>(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+
+            m[i].l=1*new Date();
+
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(92013410, "init", {
+
+            clickmap:true,
+
+            trackLinks:true,
+
+            accurateTrackBounce:true,
+
+            webvisor:true
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<noscript>
+    <div><img src=https://mc.yandex.ru/watch/92013410 style="position:absolute; left:-9999px;" alt=""></div>
+</noscript>
+<script src="/asset/js/chunk-vendors-legacy.821a34c4.js"></script>
+<script src="/asset/js/app-legacy.4065a978.js"></script>
+</body>
+</html>
