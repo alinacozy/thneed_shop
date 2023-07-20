@@ -40,7 +40,7 @@ class Order:
 
     def get_ordered_products(self) -> list[Product]:
         get_products_sql = f"""SELECT
-            products.eng_name
+            products.eng_name,
             products.rus_name,
             products.count,
             products.price
@@ -48,7 +48,7 @@ class Order:
             FROM products
             INNER JOIN order_product
             ON products.eng_name = order_product.product_name
-            WHERE order_id='{self.order_id}'
+            WHERE order_id = '{self.order_id}'
         """
         rows = get_connection().execute(get_products_sql).fetchall()
         result = []

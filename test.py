@@ -7,4 +7,4 @@ from product_queries import Order, find_order_by_id
 with app.app_context():
     a = find_order_by_id(1)
     print(a.name)
-    #print(a.get_ordered_products())
+    print(a.get_ordered_products())
