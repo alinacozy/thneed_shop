@@ -23,7 +23,7 @@ def create_tables_if_not_exist(connection):
         email text NOT NULL
     );
     """
-    create_order_product_sql = """CREATE TABLE order_product(
+    create_order_product_sql = """CREATE TABLE IF NOT EXISTS order_product(
     order_id integer,
     product_name text,
     PRIMARY KEY (order_id, product_name),
