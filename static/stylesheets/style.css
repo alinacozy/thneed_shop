@@ -1,0 +1,205 @@
+:root {
+  --main-bg-color: #B7ABE5;
+    --header-color: #a18be1;
+    --heading-color: #4c12a8;
+    --card-color: #FAFBF8;
+    --card-out-of-stock-color: #d2d0d0;
+    --light-orange: #ff976b;
+    --gray-orange: #a98974;
+    --dark-orange: #7c2603;
+    --orange: #ff753d;
+    --red: #d21318;
+}
+body{
+    background: var(--main-bg-color);
+    font-family: "Trebuchet MS";
+    margin:0px;
+    padding:0px;
+}
+.header{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    background: var(--orange);
+    color:var(--dark-orange);
+    font-size: 24pt;
+    position:sticky;
+    top:0px;
+    padding:5px;
+}
+.heading{
+    color: var(--heading-color);
+    text-align: center;
+    font-size: 30pt;
+    margin:15px 0px;
+}
+.cards-container{
+    padding:10px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product-name{
+    margin:0px;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   background: var(--card-color);
+    border-radius:5px;
+    height:350px;
+    width:250px;
+    margin:10px;
+    padding:10px;
+    color:var(--orange);
+    box-shadow: 10px 10px 10px rgba(125, 105, 218, 0.4);
+}
+.product-card img{
+    align-self: center;
+    max-width:230px;
+    margin:0px;
+    max-height: 200px;
+    border-radius: 5px;
+}
+.remaining{
+    color:var(--light-orange);
+    text-size:14pt;
+    text-align: right;
+    margin:10px 0px;
+}
+.price-and-button-container{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.buy-button{
+    display: flex;
+    justify-content: center;
+    background: var(--light-orange);
+    color:var(--heading-color);
+    padding:10px;
+    margin:0px 5px;
+    width:80px;
+    border-radius: 5px;
+}
+.buy-button a{
+    color:var(--heading-color);
+    text-align:center;
+}
+.product-card-out-of-stock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   background: var(--card-out-of-stock-color);
+    border-radius:5px;
+    height:350px;
+    width:250px;
+    margin:10px;
+    padding:10px;
+    color:var(--orange);
+    box-shadow: 10px 10px 10px rgba(125, 105, 218, 0.4);
+}
+.product-card-out-of-stock img{
+    align-self: center;
+    max-width:230px;
+    margin:0px;
+    max-height: 200px;
+    border-radius: 5px;
+    filter: brightness(60%) opacity(60%);
+}
+.not-in-stock{
+    color:var(--red);
+    text-align: right;
+    margin:5px 0px;
+}
+.wait-button{
+    display: flex;
+    justify-content: center;
+    background: var(--gray-orange);
+    color:var(--heading-color);
+    padding:10px;
+    margin:0px 5px;
+    width:180px;
+    border-radius: 5px;
+}
+.wait-button a{
+    color:var(--heading-color);
+    text-align:center;
+}
+.back-button{
+    display: flex;
+    justify-content: center;
+    background: var(--light-orange);
+    color:var(--heading-color);
+    padding:10px;
+    margin:5px 0px;
+    width:180px;
+    border-radius: 5px;
+}
+.back-button a{
+    color:var(--heading-color);
+    text-align:center;
+    font-size: 16pt;
+}
+.content-left{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--card-color);
+    border-radius:5px;
+    height:500px;
+    width:50%;
+    margin:10px;
+    padding:10px;
+    color:var(--orange);
+    box-shadow: 10px 10px 10px rgba(125, 105, 218, 0.4);
+}
+.content-left img{
+    max-width:90%;
+    margin:0px 15px 15px 15px;
+    max-height: 413px;
+    border-radius: 5px;
+}
+.content-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: var(--card-color);
+    border-radius:5px;
+    height:480px;
+    width:25%;
+    margin:10px;
+    padding:20px;
+    color:var(--orange);
+    font-size: 16pt;
+    box-shadow: 10px 10px 10px rgba(125, 105, 218, 0.4);
+}
+.content{
+    display:flex;
+    justify-content: space-around;
+}
+.submit-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-orange);
+    color:var(--heading-color);
+    padding:10px;
+    margin:5px 0px ;
+    width:100px;
+    border-radius: 5px;
+    border:0px;
+    font-size: 16pt;
+    text-align:center;
+}
+input{
+    border:1px var(--light-orange) solid;
+    border-radius: 5px;
+    color: var(--heading-color);
+    padding: 5px;
+    margin:10px 0px;
+}
+input:focus{
+    outline: 2px var(--orange) solid;
+}

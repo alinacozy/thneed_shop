@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>{{product.rus_name}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}"/>
 </head>
 <body>
-<a href="/">Назад</a>
-<h1>{{product.rus_name}}</h1>
-{% if product.count>=1 %}
-<form action="/order/{{product.eng_name}}" method="post">
-    <div>
-        <label for="phone_input">Введите номер телефона</label>
-        <input id="phone_input" name="phone"/>
+<h1 class="heading">Интернет-магазин Алиночки Коузи</h1>
+<div class="header">
+    <span>О магазине</span>
+    <span>Каталог</span>
+    <span>Корзина</span>
+</div>
+
+<div class="content">
+    <div class="content-left">
+
+        <h1 class="heading">{{product.rus_name}}</h1>
+        <img src="{{ url_for('static', filename='photos/'+product.eng_name+'.jpg') }}">
     </div>
-    <button type="submit">Купить</button>
-</form>
-<p>Осталось {{product.count}} штук!</p>
-{% else %}
-<p>Нет в наличии</p>
-{% endif %}
+    <div class="content-right">
+        {% if product.count>=1 %}
+        <h1 class="heading">Купить товар:</h1>
+        {% else %}
+        <h1 class="heading">Нет в наличии</h1>
+        <p>Вы можете оставить заявку на ожидание товара. Как только товар поступит в продажу, мы вас уведомим.</p>
+        {% endif %}
+        <form action="/order/{{product.eng_name}}" method="post">
+            <div>
+                <label for="phone_input">Введите номер телефона:</label><br/>
+                <input id="phone_input" name="phone"/>
+            </div>
+
+            <button class="submit-button" type="submit">Купить</button>
+        </form>
+        {% if product.count>=1 %}
+        <p>Осталось {{product.count}} штук!</p>
+        {% endif %}
+        <div class="back-button">
+            <a href="/">Назад в каталог</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>

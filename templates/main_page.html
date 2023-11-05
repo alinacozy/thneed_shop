@@ -2,14 +2,48 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Находкинс</title>
+    <title>Интернет-магазин Алиночки Коузи</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}"/>
+
 </head>
 <body>
-<h1>Магазин всемнужек</h1>
-<ul>
-    {% for product in list_of_products %}
-        <li><a href="/product/{{product.eng_name}}">{{product.rus_name}}</a> - {{product.count}} шт.</li>
-    {%endfor%}
-</ul>
+<h1 class="heading">Интернет-магазин Алиночки Коузи</h1>
+<div class="header">
+    <span>О магазине</span>
+    <span>Каталог</span>
+    <span>Корзина</span>
+</div>
+
+    <div class="cards-container">
+        {% for product in list_of_products %}
+        <div class="product-card">
+            <h1 class="product-name">{{product.rus_name}}</h1>
+            <img src="{{ url_for('static', filename='photos/'+product.eng_name+'.jpg') }}">
+            <div>
+            <p class="remaining">Осталось {{product.count}} штук!</p>
+            <div class="price-and-button-container">
+                <div><span style="font-size:20pt">{{product.price}}</span> <span>руб.</span></div>
+                <div class="buy-button">
+                    <a href="/product/{{product.eng_name}}">Купить</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        {%endfor%}
+        {% for product in out_of_stock %}
+        <div class="product-card-out-of-stock">
+            <h1 class="product-name">{{product.rus_name}}</h1>
+            <img src="{{ url_for('static', filename='photos/'+product.eng_name+'.jpg') }}">
+            <div>
+            <p class="not-in-stock">Нет в наличии</p>
+            <div class="price-and-button-container">
+                <div class="wait-button">
+                    <a href="/product/{{product.eng_name}}">Ожидать поступления</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
 </body>
 </html>

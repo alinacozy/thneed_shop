@@ -17,7 +17,15 @@ class Product:
 
 
 def get_list_of_products() -> list[Product]:
-    rows = get_connection().execute("select * from products").fetchall()
+    rows = get_connection().execute("select * from products where count>0").fetchall()
+    result = []
+    for row in rows:
+        result.append(Product(*row))
+    return result
+
+
+def get_list_of_products_out_of_stock() -> list[Product]:
+    rows = get_connection().execute("select * from products where count=0").fetchall()
     result = []
     for row in rows:
         result.append(Product(*row))
